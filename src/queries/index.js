@@ -2,7 +2,7 @@ import { gql } from '@apollo/client';
 //?_limit=20
 export const GET_DOCUMENTS = gql`
   query GET_DOCUMENTS {
-    documents @rest(type: "documents", path: "documents?_limit=200") {
+    documents @rest(type: "documents", path: "documents") {
       ADDRESS1
       POSTCODE
       CURRENT_ENERGY_RATING
